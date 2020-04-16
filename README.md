@@ -1,6 +1,16 @@
 # Linux-NetSpeed
+
+解决证书问题
 ```
-wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"
+# Debian
+apt-get install ca-certificates -y
+# CentOS
+yum install ca-certificates -y
+```
+
+安装
+```
+wget -N "https://raw.githubusercontent.com/ss-daily-backup-002/Linux-NetSpeed-cx9208/master/tcp.sh"
 chmod +x tcp.sh
 ./tcp.sh
 ```
